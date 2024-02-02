@@ -1,0 +1,3 @@
+In this instance, the user database (users array) on the server is in-memory, and each user object contains an id, email address, and password. This would be replaced in a production setting with a suitable database and safe password hashing methods.
+
+This code verifies that the password matches and that the email address entered is present in the database. It's crucial to remember that it is unsafe to save passwords in plain text, as this example illustrates. For increased security, you should actually utilize salting and hashing of passwords. For this, Node.js has packages like bcrypt that can be useful.
